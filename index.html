@@ -1,132 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	 <!-- адаптивность -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Белка</title>
 </head>
 <body>
-	
-		<div class="fast-contacts">
-			<ul class="fast-contacts__list">
-				<li class="fast-contacts__item">
-					ICON
-					24 часа
-				</li>
-				<li class="fast-contacts__item">
-					<a href="" class="fast-contacts__link">999-77-88</a>
-				</li>
-				<li class="fast-contacts__item">
-					<a href="" class="fast-contacts__link">adress</a>
-				</li>
-			</ul>
-		</div>
-	
-
-	<header class="page-header">
+	<header class="page-header" id="header">
 		<div class="page-header__inner">
-			<a href="" class="logo">
+			<div class="fast-contacts"> <!--обертка - серая плашка, контент слева -->
+				<ul class="contacts"> <!-- бэм-блок! встречается 2 раза на странице (line269)-->
+					<li class="contacts__item">
+						ICON
+						24 часа
+					</li>
+					<li class="contacts__item">
+						<a href="tel:#" class="contacts__link">8(812)999-77-88</a>
+					</li>
+					<li class="contacts__item">
+						<a href="#" class="contacts__link">Выборгское ш., 220</a>
+					</li>
+				</ul>
+			</div>
+		
+			<a href="#" class="logo">
 				<img src="" alt="logo">
 			</a>
-			<a href="" class="btn page-header__btn">Купить билет</a>
+			<a href="#" class="btn page-header__btn">Купить билет</a>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li class="main-nav__item">
-						<a href="#">Трассы</a>
+						<a href="#traces">Трассы</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">Акции</a>
+						<a href="#sales">Акции</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">Цены</a>
+						<a href="#prices">Цены</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">Отзывы</a>
+						<a href="#reviews">Отзывы</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">Контакты</a>
+						<a href="#contacts">Контакты</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
+
+		<section class="promo">
+			<div class="promo__inner">
+				<h1 class="promo__title">Скалодром</h1>
+				<p class="promo__text">Заберись на вершину, не уезжая в горы! Скалодром BELKA для всех, кто желает попробовать себя в скалолазании, а также для спортсменов разного уровня. Включает в себя 2 детские трассы и 3 взрослые. Скалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
+			</div>
+		</section>
 	</header>
 
-	<section class="promo">
-		<div class="promo__inner">
-			<h1 class="promo__title">Скалодром</h1>
-			<div class="promo__text">
-				<p>Lorem ipsum dolor sit amet, consectetur.</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="traces">
+	<section class="traces" id="traces">
 		<div class="traces__inner">
 			<h2 class="traces__title">Трассы</h2>
 			<div class="traces__slider">
 				<div class="traces__slider-item">
-					<section class="track">
+					<section class="track--top">
 						<header class="track__header">
-							<h3 class="track__title">Трасса 1</h3>
+							<h3 class="track__title">Трасса #1</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота</li>
-								<li class="track__list-item">Возраст</li>
+								<li class="track__list-item">Высота 15м</li>
+								<li class="track__list-item">Возраст 13+</li>
 							</ul>
 						</header>
 						<div class="track__content">
-							<img src="" alt="" class="track__img">
-							<p>Lorem ipsum dolor sit amet.</p>
+							<img class="track__img" src="" alt="track__img-1">
+							<p>Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
 						</div>
 					</section>
-					<section class="track">
+				</div>
+				<div class="traces__slider-item">
+					<section class="track--bottom">
 						<header class="track__header">
-							<h3 class="track__title">Трасса 2</h3>
+							<h3 class="track__title">Трасса #2</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота</li>
-								<li class="track__list-item">Возраст</li>
+								<li class="track__list-item">Высота 4м</li>
+								<li class="track__list-item">Возраст 4+</li>
 							</ul>
 						</header>
 						<div class="track__content">
-							<img src="" alt="" class="track__img">
-							<p>Lorem ipsum dolor sit amet.</p>
+							<img class="track__img" src="" alt="track__img-2">
+							<p>Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.</p>
 						</div>
 					</section>
-					<section class="track">
+				</div>
+				<div class="traces__slider-item">
+					<section class="track--top">
 						<header class="track__header">
-							<h3 class="track__title">Трасса 3</h3>
+							<h3 class="track__title">Трасса #3</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота</li>
-								<li class="track__list-item">Возраст</li>
+								<li class="track__list-item">Высота 10м</li>
+								<li class="track__list-item">Возраст 13+</li>
 							</ul>
 						</header>
 						<div class="track__content">
-							<img src="" alt="" class="track__img">
-							<p>Lorem ipsum dolor sit amet.</p>
+							<img class="track__img" src="" alt="track__img-3">
+							<p>Трасса подойдет как для профессионалов, так и для любителей. Необходима хорошая физ. подготовка.</p>
 						</div>
 					</section>
-					<section class="track">
+				</div>
+				<div class="traces__slider-item">
+					<section class="track--bottom">
 						<header class="track__header">
-							<h3 class="track__title">Трасса 4</h3>
+							<h3 class="track__title">Трасса #4</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота</li>
-								<li class="track__list-item">Возраст</li>
+								<li class="track__list-item">Высота 3м</li>
+								<li class="track__list-item">Возраст 4+</li>
 							</ul>
 						</header>
 						<div class="track__content">
-							<img src="" alt="" class="track__img">
-							<p>Lorem ipsum dolor sit amet.</p>
+							<img class="track__img" src="" alt="track__img-4">
+							<p>Самая невысокая трасса. Специальные зацепы для детей.</p>
 						</div>
 					</section>
-					<section class="track">
+				</div>
+				<div class="traces__slider-item">
+					<section class="track--top">
 						<header class="track__header">
-							<h3 class="track__title">Трасса 5</h3>
+							<h3 class="track__title">Трасса #5</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота</li>
-								<li class="track__list-item">Возраст</li>
+								<li class="track__list-item">Высота 8м</li>
+								<li class="track__list-item">Возраст 13+</li>
 							</ul>
 						</header>
 						<div class="track__content">
-							<img src="" alt="" class="track__img">
-							<p>Lorem ipsum dolor sit amet.</p>
+							<img class="track__img" src="" alt="track__img-5" >
+							<p>Средняя высота и сложность. Физ. подготовка не обязательна.</p>
 						</div>
 					</section>
 				</div>
@@ -134,27 +140,25 @@
 		</div>
 	</section>
 
-	<section class="sales">
+	<section class="sales" id="sales">
 		<div class="sales__inner">
 			<h2 class="sales__title">Акции</h2>
-			<div class="sales__slider">
-				<div class="sales__item">
-					<p>Компаниям от 5 чел. скидка 10%</p>
-				</div>
-				<div class="sales__item">
-					<p>Многодетным семьям скидка 20%</p>
-				</div>
-				<div class="sales__item">
-					<p>Студентам по карте ISIC 20%</p>
-				</div>
+			<div class="sales__item">
+				<p class="sales__text">Компаниям от 5 чел. скидка 10%</p>
+			</div>
+			<div class="sales__item">
+				<p class="sales__text">Многодетным семьям скидка 20%</p>
+			</div>
+			<div class="sales__item">
+				<p class="sales__text">Студентам по карте ISIC 20%</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="about__inner">
-			<h2 class="about__title">У Нас</h2>
-			<div class="about__slider">
+			<div class="about__top">
+				<h2 class="about__title">У Нас</h2>
 				<div class="about__item">
 					<p>Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
 				</div>
@@ -165,18 +169,19 @@
 					<p>На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
 				</div>
 			</div>
-		</div>
+		
 
-		<div class="about-images__inner">
-			<div class="about-image__slider">
-				<div class="about-images__item">
-					<img src="" alt="about-img-1">
-				</div>
-				<div class="about-images__item">
-					<img src="" alt="about-img-2">
-				</div>
-				<div class="about-images__item">
-					<img src="" alt="about-img-3">
+			<div class="about__bottom">
+				<div class="about__slider">
+					<div class="about__img-item">
+						<img class="about__img"src="" alt="about-img-1">
+					</div>
+					<div class="about__img-item">
+						<img class="about__img"src="" alt="about-img-2">
+					</div>
+					<div class="about__img-item">
+						<img class="about__img"src="" alt="about-img-3">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -184,19 +189,21 @@
 	
 	<div class="prices-reviews-wrapper">
 
-		<section class="prices">
+		<section class="prices"  id="prices">
 			<div class="prices__inner">
 				<h2 class="prices__title">Цены</h2>
+
 				<table class="prices__table">
 					
 				</table>
-			</div>
 			
-			<a href="#" class="btn prices__btn">Купить билет</a>
-			<a href="#" class="prices__secure-pdf">Техника безопасности</a>
+			
+				<a href="#" class="btn prices__btn">Купить билет</a>
+				<a href="#" class="prices__secure-pdf">Техника безопасности</a>
+			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="reviews__inner">
 				<h2 class="reviews__title">Отзывы</h2>
 				<div class="reviews__slider">
@@ -204,52 +211,48 @@
 					<div class="reviews__item">
 						<img src="" alt="reviews__img-1" class="reviews__img">
 						<h3 class="reviews__name">Алексей.</h3>
-						<span class="reviews__personality">Lorem.</span>
-						<div class="social-networks">
-							<ul class="social-networks__list">
-								<li class="social-networks__item">
-									<a href="#" class="social-networks__link">instagram</a>
-								</li>
-								<li class="social-networks__item">
-									<a href="#" class="social-networks__link">vk</a>
-								</li>
-							</ul>
+						<span class="reviews__personality">Скалолаз-любитель.</span>
+						<ul class="social-networks">
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link">instagram</a>
+							</li>
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link">vk</a>
+							</li>
+						</ul>
 						</div>
-						<blockquote class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex.</blockquote>
+						<blockquote class="reviews__quote">Интересные трассы, вкусная еда и самые приветливые тренера!</blockquote>
 					</div>
 
 					<div class="reviews__item">
 						<img src="" alt="reviews__img-2" class="reviews__img">
 						<h3 class="reviews__name">Мария.</h3>
-						<span class="reviews__personality">Odit!</span>
-						<div class="social-networks">
-							<ul class="social-networks__list">
-								<li class="social-networks__item">
-									<a href="#" class="social-networks__link">instagram</a>
-								</li>
-								<li class="social-networks__item">
-									<a href="#" class="social-networks__link">vk</a>
-								</li>
-							</ul>
-						</div>
-						<blockquote class="reviews__quote">Ratione vero debitis unde sit minus, cupiditate delectus officiis.</blockquote>
+						<span class="reviews__personality">Студентка.</span>
+						<ul class="social-networks">
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link">instagram</a>
+							</li>
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link">vk</a>
+							</li>
+						</ul>
+						<blockquote class="reviews__quote">Лучший скалодром в городе!</blockquote>
 					</div>
+						
 
 					<div class="reviews__item">
 						<img src="" alt="reviews__img-3" class="reviews__img">
 						<h3 class="reviews__name">Екатерина.</h3>
-						<span class="reviews__personality">Autem!</span>
-						<div class="social-networks">
-							<ul class="social-networks__list">
-								<li class="social-networks__item">
-									<a href="#" class="social-networks__link">instagram</a>
-								</li>
-								<li class="social-networks__item">
-									<a href="#" class="social-networks__link">vk</a>
-								</li>
-							</ul>
-						</div>
-						<blockquote class="reviews__quote">Nesciunt cum repellendus obcaecati reprehenderit repellat quas quibusdam, hic?</blockquote>
+						<span class="reviews__personality">Мама троих детей.</span>
+						<ul class="social-networks">
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link">instagram</a>
+							</li>
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link">vk</a>
+							</li>
+						</ul>
+						<blockquote class="reviews__quote">Парк "BELKA" - отличная альтернатива наскучившим походам в кино и кафе.</blockquote>
 					</div>
 
 				</div>
@@ -258,57 +261,64 @@
 
 	</div>
 	
-	<footer>
-		<div class="footer-contacts">
-			<ul class="footer-contacts__list">
-				<li class="footer-contacts__item">
-					<a href="#" class="footer-contacts__link">adress</a>
-				</li>
-				<li class="footer-contacts__item">
-					<a href="tel:#" class="footer-contacts__link">999-77-88</a>
-				</li>
-			</ul>
+	<footer class="page-footer">
+		<div class="page-footer__inner">
+
+			<div class="page-footer__col1">
+				<ul class="contacts" id="contacts">
+					<li class="contacts__item">
+						<a href="#" class="contacts__link">Выборгское ш., 220</a>
+					</li>
+					<li class="contacts__item">
+						<a href="tel:#" class="contacts__link">8(812)999-77-88</a>
+					</li>
+				</ul>
+			
+	
+				<nav class="page-footer-nav">
+					<ul class="page-footer-nav__list">
+						<li class="page-footer-nav__item">
+							<a href="#traces" class="page-footer-nav__link">Трассы</a>
+						</li>
+						<li class="page-footer-nav__item">
+							<a href="#sales" class="page-footer-nav__link">Акции</a>
+						</li>
+						<li class="page-footer-nav__item">
+							<a href="#prices" class="page-footer-nav__link">Цены</a>
+						</li>
+						<li class="page-footer-nav__item">
+							<a href="#reviews" class="page-footer-nav__link">Отзывы</a>
+						</li>
+						<li class="page-footer-nav__item">
+							<a href="#contacts" class="page-footer-nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+	
+			
+				<ul class="social-networks">
+					<li class="social-networks__item">
+						<a href="#" class="social-networks__link">twitter</a>
+					</li>
+					<li class="social-networks__item">
+						<a href="#" class="social-networks__link">vk</a>
+					</li>
+					<li class="social-networks__item">
+						<a href="#" class="social-networks__link">instagram</a>
+					</li>
+				</ul>
+	
+				<a href="#header" class="btn up-btn">up</a>
+	
+			</div>
+
+			<div class="page-footer__col2">
+				<iframe>
+					<!-- map -->
+				</iframe>
+			</div>
+
 		</div>
-
-		<nav class="footer-nav">
-			<ul class="footer-nav__list">
-				<li class="footer-nav__item">
-					<a href="" class="footer-nav__link">Трассы</a>
-				</li>
-				<li class="footer-nav__item">
-					<a href="" class="footer-nav__link">Акции</a>
-				</li>
-				<li class="footer-nav__item">
-					<a href="" class="footer-nav__link">Цены</a>
-				</li>
-				<li class="footer-nav__item">
-					<a href="" class="footer-nav__link">Отзывы</a>
-				</li>
-				<li class="footer-nav__item">
-					<a href="" class="footer-nav__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-
-		<div class="social-networks">
-			<ul class="social-networks__list">
-				<li class="social-networks__item">
-					<a href="" class="social-networks__link">twitter</a>
-				</li>
-				<li class="social-networks__item">
-					<a href="" class="social-networks__link">vk</a>
-				</li>
-				<li class="social-networks__item">
-					<a href="" class="social-networks__link">instagram</a>
-				</li>
-			</ul>
-		</div>
-
-
-
-		<iframe>
-			<!-- map -->
-		</iframe>
 	</footer>
 
 </body>
