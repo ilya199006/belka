@@ -6,34 +6,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/slick-theme.css">-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Белка</title>
 </head>
 <body>
 	<header class="page-header" id="header">
-		<div class="fast-contacts"> <!--обертка - серая плашка, контент слева -->
-			<ul class="contacts contacts--inline"> <!-- бэм-блок! встречается 2 раза на странице (line269)-->
-				<li class="contacts__item contacts__item--x768 contacts__item--icon1">
-							24 часа
+		<div class="fast-contacts">
+			<ul class="contacts contacts--header">
+				<li class="contacts__item contacts__item--icon1">
+					24 часа
 				</li>
 				<li class="contacts__item contacts__item--icon2">
-					<a href="tel:#" class="contacts__link">8(812)999-77-88</a>
+					<a href="tel:#" class="contacts__link">
+						8(812)999-77-88
+					</a>
 				</li>
-				<li class="contacts__item contacts__item--x768 contacts__item--icon3">
-					<a href="#" class="contacts__link">Выборгское ш., 220</a>
+				<li class="contacts__item contacts__item--icon3">
+					<a href="#" class="contacts__link">
+						Выборгское ш., 220
+					</a>
 				</li>
 			</ul>
-			<div class="burger burger--320">
-				<button></button>
-			</div>
+			<button class="fast-contacts__burger">
+				
+			</button>
 		</div>
 		<div class="page-header__inner">
-			<a href="#" class="logo logo--x768">
+			<a href="#" class="logo">
 				<img src="" alt="logo">
 			</a>
-			<a href="#" class="btn page-header__btn page-header__btn--1200">Купить билет</a>
-			<nav class="main-nav main-nav--x768">
+			<a href="#" class="btn page-header__btn">Купить билет</a>
+			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li class="main-nav__item">
 						<a href="#traces">Трассы</a>
@@ -56,22 +60,24 @@
 
 		<section class="promo">
 			<div class="promo__inner">
-				<h1 class="promo__title">СКАЛОДРОМ</h1>
-				<p class="promo__text--x768">
-					Заберись на вершину, не уезжая в горы!<br> 
+				<h1 class="promo__title">Скалодром</h1>
+				<span class="promo__teaser">
+					Заберись на вершину, не уезжая в горы!
+				</span>
+				<p class="promo__text">
 					Скалодром BELKA для всех, кто желает попробовать<br>
 					себя в скалолазании, а также для спортсменов разного уровня.<br>
 					Включает в себя 2 детские трассы и 3 взрослые.<br> Скалолазы смогут найти подробную схему всех подготовленных<br>
-					трасс, посмотреть категорию сложности.</p>
-				<p class="promo__text--320">Заберись на вершину,<br> не уезжая в горы!</p>
-				<a href="#" class="btn promo__btn promo__btn--x320">Купить билет</a>
+					трасс, посмотреть категорию сложности.
+				</p>
+				<a href="#" class="btn promo__btn">Купить билет</a>
 			</div>
 		</section>
 	</header>
 
 	<section class="traces" id="traces">
 		<div class="traces__inner">
-			<h2 class="traces__title">ТРАССЫ</h2>
+			<h2 class="traces__title">Трассы</h2>
 			<div class="traces__slider">
 				<div class="traces__slider-item">
 					<section class="track track--1">
@@ -83,8 +89,8 @@
 							</ul>
 						</header>
 						<div class="track__content">
-							<img class="track__img track__img--x768" src="" alt="track__img-1">
-							<p>Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
+							<img class="track__img track__img--1" src="" alt="track__img-1">
+							<p class="track__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
 						</div>
 					</section>
 				</div>
@@ -98,8 +104,8 @@
 							</ul>
 						</header>
 						<div class="track__content">
-							<img class="track__img track__img--x768" src="" alt="track__img-2">
-							<p>Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.</p>
+							<img class="track__img track__img--2" src="" alt="track__img-2">
+							<p class="track__text">Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.</p>
 						</div>
 					</section>
 				</div>
@@ -113,8 +119,8 @@
 							</ul>
 						</header>
 						<div class="track__content">
-							<img class="track__img track__img--x768" src="" alt="track__img-3">
-							<p>Трасса подойдет как для профессионалов, так и для любителей. Необходима хорошая физ. подготовка.</p>
+							<img class="track__img track__img--3" src="" alt="track__img-3">
+							<p class="track__text">Трасса подойдет как для профессионалов, так и для любителей. Необходима хорошая физ. подготовка.</p>
 						</div>
 					</section>
 				</div>
@@ -128,8 +134,8 @@
 							</ul>
 						</header>
 						<div class="track__content">
-							<img class="track__img track__img--x768" src="" alt="track__img-4">
-							<p>Самая невысокая трасса. Специальные зацепы для детей.</p>
+							<img class="track__img track__img--4" src="" alt="track__img-4">
+							<p class="track__text">Самая невысокая трасса. Специальные зацепы для детей.</p>
 						</div>
 					</section>
 				</div>
@@ -143,8 +149,8 @@
 							</ul>
 						</header>
 						<div class="track__content">
-							<img class="track__img track__img--x768" src="" alt="track__img-5" >
-							<p>Средняя высота и сложность. Физ. подготовка не обязательна.</p>
+							<img class="track__img track__img--5" src="" alt="track__img-5" >
+							<p class="track__text">Средняя высота и сложность. Физ. подготовка не обязательна.</p>
 						</div>
 					</section>
 				</div>
@@ -154,7 +160,7 @@
 
 	<section class="sales" id="sales">
 		<div class="sales__inner">
-			<h2 class="sales__title">АКЦИИ</h2>
+			<h2 class="sales__title">Акции</h2>
 			<div class="sales__item sales__item--1">
 				<p class="sales__text">Компаниям от 5 чел. <br>скидка 10%</p>
 			</div>
@@ -170,7 +176,7 @@
 	<section class="about" id="about">
 		<div class="about__inner">
 			<div class="about__top">
-				<h2 class="about__title">У НАС</h2>
+				<h2 class="about__title">У нас</h2>
 				<div class="about__item">
 					<p>Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
 				</div>
@@ -186,13 +192,13 @@
 			<div class="about__bottom">
 				<div class="about__slider">
 					<div class="about__img-item">
-						<img class="about__img"src="" alt="about-img-1">
+						<img class="about__img" src="" alt="about-img-1">
 					</div>
 					<div class="about__img-item">
-						<img class="about__img"src="" alt="about-img-2">
+						<img class="about__img" src="" alt="about-img-2">
 					</div>
 					<div class="about__img-item">
-						<img class="about__img"src="" alt="about-img-3">
+						<img class="about__img" src="" alt="about-img-3">
 					</div>
 				</div>
 			</div>
@@ -203,8 +209,24 @@
 
 		<section class="prices"  id="prices">
 			<div class="prices__inner">
-				<h2 class="prices__title">ЦЕНЫ</h2>
-
+				<h2 class="prices__title">Цены</h2>
+				<div class="prices__mobile">
+					<form class="prices__form" action="">
+						
+					</form>
+					<p class="prices__costs">
+						Стоимость абонемента
+						<span class="prices__number">0 руб</span>
+					</p>
+					<p class="prices__per-hour">
+						Персональный оператор парка 
+						<span class="prices__per-hour-number">600 руб/час</span>
+					</p>
+					<p class="prices__per-hour">
+						Каждый дополнительный час 
+						<span class="prices__per-hour-number">500 руб</span>
+					</p>
+				</div>
 				<table class="prices__table">
 					
 				</table>
@@ -217,7 +239,7 @@
 
 		<section class="reviews" id="reviews">
 			<div class="reviews__inner">
-				<h2 class="reviews__title">ОТЗЫВЫ</h2>
+				<h2 class="reviews__title">Отзывы</h2>
 				<div class="reviews__slider">
 
 					<div class="reviews__item">
@@ -275,11 +297,11 @@
 	<footer class="page-footer">
 		<div class="page-footer__inner">
 
-			<div class="page-footer__col1">
-				<div class="map map--320" style="border: 1px solid;">
+			<div class="page-footer__left">
+				<div class="map" style="border: 1px solid;">
 					<iframe src="" frameborder="0"></iframe>
 				</div>
-				<ul class="contacts contacts--stack" id="contacts">
+				<ul class="contacts contacts--footer" id="contacts">
 					<li class="contacts__item contacts__item--icon3">
 						<a href="#" class="contacts__link">Выборгское ш., 220</a>
 					</li>
@@ -322,10 +344,10 @@
 					</li>
 				</ul>
 	
-				<a href="#header" class="btn up-btn btn--mx768">up</a>
+				<a href="#header" class="btn up-btn">up</a>
 			</div>
 
-			<div class="page-footer__col2 page-footer__col2--x768" style="border: 1px solid;">
+			<div class="page-footer__right">
 				<iframe>
 					<!-- map -->
 				</iframe>

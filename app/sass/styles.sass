@@ -1,0 +1,208 @@
+@import fonts
+
+a
+	color: #000
+	text-decoration: none
+
+ul
+	margin: 0px 0px
+	padding-left: 0px
+	list-style-type: none
+
+h1, h2
+	text-transform: uppercase
+
+.btn
+	display: block
+	width: 146px
+	padding-top: 5px
+	padding-bottom: 5px
+
+	font-family: 'PrNovaReg'
+	font-size: 16px
+	text-align: center
+
+/*320*/
+[class*="__inner"]
+	width: 320px
+	margin: 0 auto
+	padding-left: 14px
+	padding-right: 14px
+
+.contacts
+	font-family: 'PrNovaLight'
+	font-size: 16px
+
+	&--header
+		display: inline-block
+		.contacts__item
+			display: inline-block
+			vertical-align: middle
+
+			&--icon1
+				display: none
+
+			&--icon2
+
+			&--icon3
+				display: none
+
+	&--footer
+		.contacts__item
+			display: block
+
+.fast-contacts
+	position: fixed
+	top: 0
+	width: 100%
+	background-color: lightgrey
+	vertical-align: middle
+
+	&__burger
+		display: block
+		width: 25px
+		height: 25px
+		float: right
+
+.page-header
+	background-image: url('/img/320/header_bg.png')
+	background-size: cover
+	background-position: center bottom
+
+
+
+	&__btn
+		display: none
+
+.logo
+	display: none
+
+.main-nav
+	display: none
+			
+.promo
+	padding-top: 80px
+	padding-bottom: 80px
+
+	&__title
+		font-family: 'PrNovaBold'
+		font-size: 36px
+		text-align: center
+		margin-bottom: 82px
+
+		&:after
+			content: ''
+			display: block
+			width: 80px
+			padding-top: 8px
+			margin: 0 auto
+			border-bottom: 2px solid #000
+
+	&__teaser
+		padding-right: 130px
+		font-family: 'OpenSansReg'
+		font-size: 16px
+
+	&__text
+		display: none
+
+	&__btn
+		margin-top: 45px
+		border: 1px solid #000
+
+.traces
+	background-image: url('/img/320/traces_bg.png')
+	background-size: cover
+	background-position: center top
+
+	&__title
+		color: #fff
+		font-family: 'PrNovaBold'
+		font-size: 36px
+		text-align: center
+		margin-top: 0px
+		margin-bottom: 50px
+
+		&:after
+			content: ''
+			display: block
+			width: 80px
+			padding-top: 8px
+			margin: 0 auto
+			border-bottom: 2px solid #fff
+
+	&__slider
+
+		&-item
+
+
+
+.track
+	width: 214px
+	margin: 0 auto
+	text-align: center
+	background-size: cover
+	background-position: center 
+
+	&--1
+		background-image: url('../img/track__img1.png') 
+	&--2
+		background-image: url('../img/track__img2.png')
+	&--3
+		background-image: url('../img/track__img3.png')
+	&--4
+		background-image: url('../img/track__img4.png')
+	&--5
+		background-image: url('../img/track__img5.png')
+	
+
+	&__header
+		
+	&__title
+		color: #c7c7d3
+		font-family: 'PrNovaBold'
+		font-size: 30px
+		text-align: center
+
+	&__list
+		color: #fff
+		font-family: 'OpenSansReg'
+		font-size: 16px
+
+	&__content
+
+	&__text
+		color: #fff
+		font-family: 'OpenSansReg'
+		font-size: 16px
+
+/*768*/
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+	[class*="__inner"]
+		width: 768px
+
+	.contacts
+
+		&--header
+			display: inline-block
+			.contacts__item
+				display: inline-block
+				vertical-align: middle
+	
+				&--icon1
+					display: inline-block
+	
+				&--icon2
+	
+				&--icon3
+					display: inline-block
+
+	.promo
+		&__text
+			display: block
+
+/*1200*/
+@media only screen and (min-width: 1200px)
+	[class*="__inner"]
+		width: 1200px
+
