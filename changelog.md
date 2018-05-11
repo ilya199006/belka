@@ -1,11 +1,19 @@
 Landing page Скалодрома "Belka"
 ===============================
+v0.0.5 - track
+--------------
+1. Стилизация track
+2. git worktree: master, gh-pages
+
+***
+
 v0.0.4 - Стилизация promo, traces
 ---------------------------------
 1. Правки index html
 2. SASS - mobile first
 3. Изменена структура каталога /img
 4. Стилизация promo
+5. Стилизация traces
 
 ***
 
