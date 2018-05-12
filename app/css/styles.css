@@ -121,7 +121,8 @@ h1, h2 {
     border: 1px solid #000; }
 
 .traces {
-  background-image: url("../img/320/traces_bg.png");
+  padding-bottom: 80px;
+  background-image: linear-gradient(to bottom, transparent 85%, #fff), url("../img/320/traces_bg.png");
   background-size: cover;
   background-position: center top; }
   .traces__title {
@@ -195,22 +196,50 @@ h1, h2 {
     font-family: 'OpenSansReg';
     font-size: 16px; }
 
-.sales__title {
-  color: #000;
-  font-family: 'PrNovaBold';
-  font-size: 36px;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px; }
-  .sales__title:after {
-    content: '';
-    display: block;
-    width: 80px;
-    padding-top: 8px;
-    margin: 0 auto;
-    border-bottom: 2px solid #000; }
+.sales {
+  margin-bottom: 30px; }
+  .sales__title {
+    margin-top: -40px;
+    margin-bottom: 50px;
+    color: #000;
+    font-family: 'PrNovaBold';
+    font-size: 36px;
+    text-align: center; }
+    .sales__title:after {
+      content: '';
+      display: block;
+      width: 80px;
+      padding-top: 8px;
+      margin: 0 auto;
+      border-bottom: 2px solid #000; }
+  .sales__item {
+    width: 293px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 188px;
+    padding-bottom: 25px;
+    margin-bottom: 13px;
+    background-size: cover;
+    background-position: center; }
+    .sales__item--1 {
+      background-image: url("../img/320/sales__item_bg1.png"); }
+    .sales__item--2 {
+      background-image: url("../img/320/sales__item_bg2.png"); }
+    .sales__item--3 {
+      background-image: url("../img/320/sales__item_bg3.png"); }
+  .sales__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'PrNovaBold';
+    font-size: 24px; }
 
 .about__top {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
   background-image: url("../img/320/about_bg.png");
   background-size: cover;
   background-position: center; }
@@ -230,10 +259,43 @@ h1, h2 {
     margin: 0 auto;
     border-bottom: 2px solid #fff; }
 
+.about__item {
+  display: inline-block;
+  margin-bottom: 40px; }
+  .about__item:before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: cover; }
+  .about__item--1:before {
+    background-image: url("../img/icons/icon-outfit.png"); }
+  .about__item--2:before {
+    background-image: url("../img/icons/icon-tracks.png"); }
+  .about__item--3:before {
+    background-image: url("../img/icons/icon-help.png"); }
+
 .about__text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 205px;
   color: #fff;
   font-family: 'OpenSansReg';
   font-size: 14px; }
+
+.about__bottom {
+  margin-bottom: 30px; }
+
+.about__img {
+  margin: auto;
+  width: 217px; }
+
+.prices-reviews-wrapper {
+  background-image: url("../img/320/prices-reviews_bg.png");
+  background-size: cover;
+  background-position: center; }
 
 .prices__title {
   color: #000;

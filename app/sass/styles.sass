@@ -112,7 +112,8 @@ h1, h2
 		border: 1px solid #000
 
 .traces
-	background-image: url('../img/320/traces_bg.png')
+	padding-bottom: 80px
+	background-image: linear-gradient(to bottom, transparent 85%, #fff), url('../img/320/traces_bg.png')
 	background-size: cover
 	background-position: center top
 
@@ -207,14 +208,15 @@ h1, h2
 		font-size: 16px
 
 .sales
-
+	margin-bottom: 30px
+	
 	&__title
+		margin-top: -40px
+		margin-bottom: 50px
 		color: #000
 		font-family: 'PrNovaBold'
 		font-size: 36px
 		text-align: center
-		margin-top: 0px
-		margin-bottom: 50px
 
 		&:after
 			content: ''
@@ -224,12 +226,45 @@ h1, h2
 			margin: 0 auto
 			border-bottom: 2px solid #000
 
+	&__item
+		width: 293px
+		padding-left: 15px
+		padding-right: 15px
+		padding-top: 188px
+		padding-bottom: 25px
+
+		margin-bottom: 13px
+		background-size: cover
+		background-position: center
+
+		&--1
+			background-image: url('../img/320/sales__item_bg1.png')
+
+		&--2
+			background-image: url('../img/320/sales__item_bg2.png')
+
+		&--3
+			background-image: url('../img/320/sales__item_bg3.png')
+
+	&__text
+		margin-top: 0
+		margin-bottom: 0
+		color: #fff
+		font-family: 'PrNovaBold'
+		font-size: 24px
+
 .about
 	
 	&__top
+		padding-left: 15px
+		padding-right: 15px
+		padding-top: 50px
+		padding-bottom: 50px
+
+		margin-bottom: 30px
 		background-image: url('../img/320/about_bg.png')
 		background-size: cover
-		background-position: center		
+		background-position: center
 
 	&__title
 		color: #fff
@@ -248,13 +283,47 @@ h1, h2
 			border-bottom: 2px solid #fff
 	
 	&__item
+		display: inline-block
+		margin-bottom: 40px
 
+		&:before
+			content: ''
+			display: inline-block
+			width: 60px
+			height: 60px
+			background-size: cover
+
+		&--1:before
+			background-image: url('../img/icons/icon-outfit.png')
+
+		&--2:before
+			background-image: url('../img/icons/icon-tracks.png')
+
+		&--3:before
+			background-image: url('../img/icons/icon-help.png')
 
 	&__text
+		display: inline-block
+		vertical-align: top
+		margin-top: 0
+		margin-bottom: 0
+		width: 205px
 		color: #fff
 		font-family: 'OpenSansReg'
 		font-size: 14px
 
+	&__bottom
+		margin-bottom: 30px
+
+	&__img
+		margin: auto
+		width: 217px
+
+.prices-reviews-wrapper
+	background-image: url('../img/320/prices-reviews_bg.png')
+	background-size: cover
+	background-position: center
+	
 .prices
 
 	&__title
