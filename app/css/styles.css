@@ -68,6 +68,8 @@ h1, h2 {
         display: none; }
   .contacts--footer .contacts__item {
     display: block; }
+  .contacts--footer .contacts__link {
+    color: #dadae7; }
 
 .fast-contacts {
   position: fixed;
@@ -175,7 +177,7 @@ h1, h2 {
     margin-bottom: 70px; }
   .track__title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     color: #c7c7d3;
     font-family: 'PrNovaBold';
     font-size: 30px;
@@ -184,6 +186,26 @@ h1, h2 {
     color: #fff;
     font-family: 'OpenSansReg';
     font-size: 16px; }
+    .track__list-item {
+      padding-bottom: 15px; }
+      .track__list-item:before {
+        vertical-align: middle; }
+      .track__list-item--height:before {
+        content: '';
+        display: inline-block;
+        width: 35px;
+        height: 22px;
+        margin-right: 10px;
+        background-image: url("../img/icons/icon-rocks.png");
+        background-size: cover; }
+      .track__list-item--age:before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 27px;
+        margin-right: 10px;
+        background-image: url("../img/icons/icon-age.png");
+        background-size: cover; }
   .track__content {
     position: relative;
     z-index: 2; }
@@ -293,6 +315,7 @@ h1, h2 {
   width: 217px; }
 
 .prices-reviews-wrapper {
+  padding-bottom: 30px;
   background-image: url("../img/320/prices-reviews_bg.png");
   background-size: cover;
   background-position: center; }
@@ -312,20 +335,119 @@ h1, h2 {
     margin: 0 auto;
     border-bottom: 2px solid #000; }
 
-.reviews__title {
-  color: #000;
-  font-family: 'PrNovaBold';
-  font-size: 36px;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px; }
-  .reviews__title:after {
+.reviews {
+  position: relative;
+  margin: 0 auto; }
+  .reviews:before {
     content: '';
+    position: absolute;
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100%;
+    z-index: 1;
+    background-color: #e7e7e7;
+    opacity: .6; }
+  .reviews__inner {
+    position: relative;
+    z-index: 2; }
+  .reviews__title {
+    color: #000;
+    font-family: 'PrNovaBold';
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px; }
+    .reviews__title:after {
+      content: '';
+      display: block;
+      width: 80px;
+      padding-top: 8px;
+      margin: 0 auto;
+      border-bottom: 2px solid #000; }
+
+.comment {
+  padding-top: 14px;
+  padding-bottom: 54px;
+  text-align: center; }
+  .comment__img {
+    margin: auto; }
+  .comment__name {
+    color: #22313f;
+    font-family: 'OpenSansReg';
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .comment__personality {
+    color: #22313f;
+    font-family: 'OpenSansReg';
+    font-size: 16px; }
+  .comment__list {
+    margin-top: 12px; }
+    .comment__list-item {
+      display: inline-block;
+      vertical-align: middle; }
+  .comment__link {
     display: block;
-    width: 80px;
-    padding-top: 8px;
-    margin: 0 auto;
-    border-bottom: 2px solid #000; }
+    background-size: cover;
+    background-position: center;
+    margin-left: 5px; }
+    .comment__link--instagram {
+      width: 21px;
+      height: 21px;
+      background-image: url("../img/icons/feedback-insta-icon.png"); }
+    .comment__link--vk {
+      width: 30px;
+      height: 18px;
+      background-image: url("../img/icons/feedback-vk-icon.png"); }
+  .comment__quote {
+    color: #22313f;
+    font-family: 'OpenSansReg';
+    font-size: 16px; }
+
+.page-footer {
+  background-color: #22313f;
+  padding-bottom: 30px; }
+  .page-footer .up-btn {
+    float: right;
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-image: url("../img/icons/up-btn.png"); }
+  .page-footer__right {
+    display: none; }
+  .page-footer-nav__list {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .page-footer-nav__item {
+    margin-bottom: 10px; }
+  .page-footer-nav__link {
+    color: #dadae7;
+    text-transform: uppercase;
+    font-family: 'OpenSansReg';
+    font-size: 14px; }
+
+.social-networks {
+  display: inline-block;
+  width: 50%; }
+  .social-networks__item {
+    margin-right: 9px;
+    display: inline-block;
+    vertical-align: middle; }
+  .social-networks__link {
+    display: block; }
+    .social-networks__link--twitter {
+      width: 28px;
+      height: 24px;
+      background-image: url("../img/icons/footer__twitter-icon.png"); }
+    .social-networks__link--vk {
+      width: 32px;
+      height: 19px;
+      background-image: url("../img/icons/footer__vk-icon.png"); }
+    .social-networks__link--instagram {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icons/footer__instagram-icon.png"); }
 
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
