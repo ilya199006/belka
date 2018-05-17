@@ -1,12 +1,13 @@
 Landing page Скалодрома "Belka"
 ===============================
-v0.0.6 - Cтилизация .reviews, .footer
+v0.0.6 - Cтилизация .reviews .footer .prices
 -----------------------------------
 1. Sass: .reviews
 2. Sass: .footer
-3. index.html - fixed
-4. Добавлены иконки в .track
-5. Удалено лишнее из /img/icons
+3. Sass: .prices
+4. index.html - fixed
+5. Добавлены иконки в .track
+6. Удалено лишнее из /img/icons
 
 ***
 
