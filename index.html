@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Белка</title>
 </head>
@@ -84,8 +83,8 @@
 						<header class="track__header">
 							<h3 class="track__title">Трасса #1</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота 15м</li>
-								<li class="track__list-item">Возраст 13+</li>
+								<li class="track__list-item track__list-item--height">Высота 15м</li>
+								<li class="track__list-item track__list-item--age">Возраст 13+</li>
 							</ul>
 						</header>
 						<div class="track__content">
@@ -99,8 +98,8 @@
 						<header class="track__header">
 							<h3 class="track__title">Трасса #2</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота 4м</li>
-								<li class="track__list-item">Возраст 4+</li>
+								<li class="track__list-item track__list-item--height">Высота 4м</li>
+								<li class="track__list-item track__list-item--age">Возраст 4+</li>
 							</ul>
 						</header>
 						<div class="track__content">
@@ -114,8 +113,8 @@
 						<header class="track__header">
 							<h3 class="track__title">Трасса #3</h3>
 							<ul class="track__list">
-								<li class="track__list-item track__list-item--icon1">Высота 10м</li>
-								<li class="track__list-item track__list-item--icon2">Возраст 13+</li>
+								<li class="track__list-item track__list-item--height">Высота 10м</li>
+								<li class="track__list-item track__list-item--age">Возраст 13+</li>
 							</ul>
 						</header>
 						<div class="track__content">
@@ -129,8 +128,8 @@
 						<header class="track__header">
 							<h3 class="track__title">Трасса #4</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота 3м</li>
-								<li class="track__list-item">Возраст 4+</li>
+								<li class="track__list-item track__list-item--height">Высота 3м</li>
+								<li class="track__list-item track__list-item--age">Возраст 4+</li>
 							</ul>
 						</header>
 						<div class="track__content">
@@ -144,8 +143,8 @@
 						<header class="track__header">
 							<h3 class="track__title">Трасса #5</h3>
 							<ul class="track__list">
-								<li class="track__list-item">Высота 8м</li>
-								<li class="track__list-item">Возраст 13+</li>
+								<li class="track__list-item track__list-item--height">Высота 8м</li>
+								<li class="track__list-item track__list-item--age">Возраст 13+</li>
 							</ul>
 						</header>
 						<div class="track__content">
@@ -208,15 +207,28 @@
 	<div class="prices-reviews-wrapper">
 
 		<section class="prices"  id="prices">
-			<div class="prices__inner">
+
 				<h2 class="prices__title">Цены</h2>
 				<div class="prices__mobile">
-					<form class="prices__form" action="">
-						
-					</form>
+					<select class="prices__select" name="" id="">
+						<option class="prices__option" selected disabled hidden>Выберите возраст</option>
+						<option class="prices__option" value="">Детский от 4 лет</option>
+						<option class="prices__option" value="">Взрослый от 7 лет</option>
+					</select>
+					<select class="prices__select" name="" id="">
+						<option class="prices__option" selected disabled hidden>Выберете место</option>
+						<option class="prices__option" value="">Все трассы</option>
+						<option class="prices__option" value="">Скалодром</option>
+						<option class="prices__option" value="">Веревочный парк</option>
+					</select>
+					<select class="prices__select" name="" id="">
+						<option class="prices__option" selected disabled hidden>Выберете длительность</option>
+						<option class="prices__option" value="">Прохождение парка за 3 часа</option>
+						<option class="prices__option" value="">Прохождение парка за 12 часов</option>
+					</select>
 					<p class="prices__costs">
 						Стоимость абонемента
-						<span class="prices__number">0 руб</span>
+						<span class="prices__costs-number">0 руб</span>
 					</p>
 					<p class="prices__per-hour">
 						Персональный оператор парка 
@@ -227,13 +239,15 @@
 						<span class="prices__per-hour-number">500 руб</span>
 					</p>
 				</div>
+			<div class="prices__inner">
 				<table class="prices__table">
 					
 				</table>
 			
-			
-				<a href="#" class="btn prices__btn">Купить билет</a>
-				<a href="#" class="prices__secure-pdf">Техника безопасности</a>
+				<form class="prices__form" action="">			
+					<button class="prices__btn">Купить билет</button>
+				</form>
+				<a href="#" class="prices__secure-pdf">Техника безопасности (PDF)</a>
 			</div>
 		</section>
 
@@ -242,50 +256,57 @@
 				<h2 class="reviews__title">Отзывы</h2>
 				<div class="reviews__slider">
 
-					<div class="reviews__item">
-						<img src="" alt="reviews__img-1" class="reviews__img">
-						<h3 class="reviews__name">Алексей.</h3>
-						<span class="reviews__personality">Скалолаз-любитель.</span>
-						<ul class="social-networks">
-							<li class="social-networks__item">
-								<a href="#" class="social-networks__link">instagram</a>
-							</li>
-							<li class="social-networks__item">
-								<a href="#" class="social-networks__link">vk</a>
-							</li>
-						</ul>
-						<blockquote class="reviews__quote">Интересные трассы, вкусная еда и самые приветливые тренера!</blockquote>
+					<div class="reviews__slider-item">
+						<section class="comment">
+
+								<img src="img/comment-photo-1.png" alt="comment__img-1" class="comment__img">
+								<h3 class="comment__name">Алексей.</h3>
+								<span class="comment__personality">Скалолаз-любитель.</span>
+								<ul class="comment__list">
+									<li class="comment__list-item">
+										<a href="#" class="comment__link comment__link--instagram"></a>
+									</li>
+									<li class="comment__list-item">
+										<a href="#" class="comment__link comment__link--vk"></a>
+									</li>
+								</ul>
+								<blockquote class="comment__quote">Интересные трассы, вкусная еда и самые приветливые тренера!</blockquote>
+						</section>
 					</div>
 
-					<div class="reviews__item">
-						<img src="" alt="reviews__img-2" class="reviews__img">
-						<h3 class="reviews__name">Мария.</h3>
-						<span class="reviews__personality">Студентка.</span>
-						<ul class="social-networks">
-							<li class="social-networks__item">
-								<a href="#" class="social-networks__link">instagram</a>
-							</li>
-							<li class="social-networks__item">
-								<a href="#" class="social-networks__link">vk</a>
-							</li>
-						</ul>
-						<blockquote class="reviews__quote">Лучший скалодром в городе!</blockquote>
+					<div class="reviews__slider-item">
+						<section class="comment">
+							<img src="img/comment-photo-2.png" alt="comment__img-2" class="comment__img">
+							<h3 class="comment__name">Мария.</h3>
+							<span class="comment__personality">Студентка.</span>
+							<ul class="comment__list">
+								<li class="comment__list-item">
+									<a href="#" class="comment__link comment__link--instagram"></a>
+								</li>
+								<li class="comment__list-item">
+									<a href="#" class="comment__link comment__link--vk"></a>
+								</li>
+							</ul>
+							<blockquote class="comment__quote">Лучший скалодром в городе!</blockquote>
+						</section>
 					</div>
 						
 
-					<div class="reviews__item">
-						<img src="" alt="reviews__img-3" class="reviews__img">
-						<h3 class="reviews__name">Екатерина.</h3>
-						<span class="reviews__personality">Мама троих детей.</span>
-						<ul class="social-networks">
-							<li class="social-networks__item">
-								<a href="#" class="social-networks__link">instagram</a>
-							</li>
-							<li class="social-networks__item">
-								<a href="#" class="social-networks__link">vk</a>
-							</li>
-						</ul>
-						<blockquote class="reviews__quote">Парк "BELKA" - отличная альтернатива наскучившим походам в кино и кафе.</blockquote>
+					<div class="reviews__slider-item">
+						<section class="comment">
+							<img src="img/comment-photo-3.png" alt="comment__img-3" class="comment__img">
+							<h3 class="comment__name">Екатерина.</h3>
+							<span class="comment__personality">Мама троих детей.</span>
+							<ul class="comment__list">
+								<li class="comment__list-item">
+									<a href="#" class="comment__link comment__link--instagram"></a>
+								</li>
+								<li class="comment__list-item">
+									<a href="#" class="comment__link comment__link--vk"></a>
+								</li>
+							</ul>
+							<blockquote class="comment__quote">Парк "BELKA" - отличная альтернатива наскучившим походам в кино и кафе.</blockquote>
+						</section>
 					</div>
 
 				</div>
@@ -295,12 +316,11 @@
 	</div>
 	
 	<footer class="page-footer">
+		<div class="map" style="border: 1px solid;">
+			<iframe src="" frameborder="0"></iframe>
+		</div>
 		<div class="page-footer__inner">
-
 			<div class="page-footer__left">
-				<div class="map" style="border: 1px solid;">
-					<iframe src="" frameborder="0"></iframe>
-				</div>
 				<ul class="contacts contacts--footer" id="contacts">
 					<li class="contacts__item contacts__item--icon3">
 						<a href="#" class="contacts__link">Выборгское ш., 220</a>
@@ -334,17 +354,17 @@
 			
 				<ul class="social-networks">
 					<li class="social-networks__item">
-						<a href="#" class="social-networks__link">twitter</a>
+						<a href="#" class="social-networks__link social-networks__link--twitter"></a>
 					</li>
 					<li class="social-networks__item">
-						<a href="#" class="social-networks__link">vk</a>
+						<a href="#" class="social-networks__link social-networks__link--vk"></a>
 					</li>
 					<li class="social-networks__item">
-						<a href="#" class="social-networks__link">instagram</a>
+						<a href="#" class="social-networks__link social-networks__link--instagram"></a>
 					</li>
 				</ul>
 	
-				<a href="#header" class="btn up-btn">up</a>
+				<a href="#header" class="up-btn"></a>
 			</div>
 
 			<div class="page-footer__right">
