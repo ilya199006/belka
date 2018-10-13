@@ -46,7 +46,16 @@ h1, h2
 					display: none
 
 				&--icon2
-
+					.contacts__link
+						&:before
+							content: ''
+							display: inline-block
+							width: 16px
+							height: 16px
+							margin-left: 10px
+							margin-right: 10px
+							background-image: url('../img/icons/contacts__item--phone.png')
+							background-size: cover
 				&--icon3
 					display: none
 
@@ -338,8 +347,12 @@ h1, h2
 		font-family: 'OpenSansReg'
 		font-size: 14px
 
-	&__bottom
-		margin-bottom: 30px
+	&__bottom 
+		width: 218px
+		margin: 30px auto
+
+	&__slider
+
 
 	&__img
 		margin: auto
@@ -429,6 +442,7 @@ h1, h2
 		text-transform: uppercase
 		background-color: #800000
 		border: none
+		cursor: pointer
 		padding-top: 12px
 		padding-bottom: 12px
 		padding-left: 27px

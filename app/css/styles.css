@@ -64,6 +64,15 @@ h1, h2 {
       vertical-align: middle; }
       .contacts--header .contacts__item--icon1 {
         display: none; }
+      .contacts--header .contacts__item--icon2 .contacts__link:before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-image: url("../img/icons/contacts__item--phone.png");
+        background-size: cover; }
       .contacts--header .contacts__item--icon3 {
         display: none; }
   .contacts--footer .contacts__item {
@@ -308,7 +317,8 @@ h1, h2 {
   font-size: 14px; }
 
 .about__bottom {
-  margin-bottom: 30px; }
+  width: 218px;
+  margin: 30px auto; }
 
 .about__img {
   margin: auto;
@@ -386,6 +396,7 @@ h1, h2 {
     text-transform: uppercase;
     background-color: #800000;
     border: none;
+    cursor: pointer;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 27px;
