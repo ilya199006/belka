@@ -1,0 +1,179 @@
+@media only screen and (min-width: 768px)
+	[class*="__inner"]
+		width: 768px
+		margin: 0 auto
+
+	.fast-contacts
+		text-align: right
+
+		&__burger
+			display: none
+
+	.contacts
+		&--header
+			display: inline-block
+			.contacts__item
+				display: inline-block
+				vertical-align: middle
+	
+				&--icon1
+					display: inline-block
+
+					&:before
+						content: ''
+						display: inline-block
+						width: 19px
+						height: 19px
+						vertical-align: baseline
+						margin-left: 10px
+						margin-right: 4px
+						margin-top: 4px
+						background-image: url("../img/icons/contacts__item--time.png")
+						background-size: cover
+
+				&--icon2
+	
+				&--icon3
+					display: inline-block
+
+					&:before
+						content: ''
+						display: inline-block
+						width: 13px
+						height: 18px
+						vertical-align: baseline
+						margin-left: 10px
+						margin-right: 4px
+						margin-top: 4px
+						background-image: url("../img/icons/contacts__item--place.png")
+						background-size: cover
+	.promo
+		&__text
+			display: block
+			font-family: 'OpenSansReg'
+			font-size: 16px
+			line-height: 31px
+
+	.page-header
+		background-image: url('../img/768/header_bg.png')
+		background-size: cover
+		background-position: center bottom
+		padding-top: 40px
+
+		.logo
+			display: inline-block
+			vertical-align: middle
+
+		.main-nav
+			display: inline-block
+			margin-left: 100px
+			vertical-align: middle
+
+			&__list
+				display: inline-block
+
+			&__item
+				display: inline-block
+				font-family: 'PrNovaReg'
+				font-size: 20px
+				margin-left: 46px
+
+	.traces
+		//извлечь из макета бэкграунд на 768
+		background-image: linear-gradient(to bottom, transparent 85%, #fff), url('../img/320/traces_bg.png')
+
+	.sales
+		&__item
+			width: 100%
+
+			&--1
+				background-image: url('../img/768/sales__item_bg1.png')
+			&--2
+				background-image: url('../img/768/sales__item_bg2.png')
+			&--3
+				background-image: url('../img/768/sales__item_bg3.png')
+		&__text
+			font-size: 30px
+
+	.about
+		&__top
+			width: 100%
+
+		&__wrap-item
+			width: 700px
+			margin: 0 auto
+
+		&__item
+			width: 200px
+
+			&:before
+				display: block
+				margin: 10px auto
+
+			&--2
+				margin-left: 40px
+			&--3
+				margin-left: 40px
+		
+		&__bottom
+			width: 100%
+		
+		&__img
+			width: 245px
+
+	.prices
+		&__mobile
+			display: none
+		
+		&__table
+			width: 740px
+			margin: 0 auto
+			display: block
+			border-collapse: collapse
+			font-family: 'OpenSansReg'
+			font-size: 16px
+
+			&-head
+				color: #dadae7
+				background-color: #22313f
+
+			&-extra-time
+				text-align: center
+				text-transform: uppercase
+
+
+			&-operator
+				background-color: #f0f0f0
+				opacity: 91%
+
+				&-price
+					text-align: right
+
+
+			&-th
+				text-align: center
+
+			&-time
+				text-align: right
+				background-color: #e7e7e7
+				padding-right: 20px
+
+			&-col1
+				width: 370px
+				color: #dadae7
+				background-color: #22313f
+				text-align: center
+				text-transform: uppercase
+				box-sizing: border-box
+
+			&-price
+				width: 185px
+				text-align: center
+
+			td
+				padding-top: 16px
+				padding-bottom: 16px
+
+
+
+

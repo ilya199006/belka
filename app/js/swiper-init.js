@@ -17,6 +17,20 @@ var tracesSlider = new Swiper('.traces__slider', {
 	navigation: {
 		nextEl: '.news-slider-button-next',
 		prevEl: '.news-slider-button-prev',
+	},
+	breakpoints: {
+		767: {
+			slidesPerView: 1,
+		},
+		1025: {
+			slidesPerView: 3,
+		},
+		1200: {
+			slidesPerView: 5,
+		},
+		2000: {
+			slidesPerView: 5,
+		}
 	}
 });
 
@@ -28,7 +42,19 @@ var aboutSlider = new Swiper('.about__slider', {
 	slideNextClass: 'about__slider-item-next',
 	slidesPerView: 1,
 	spaceBetween: 15,
-	loop: true
+	loop: true,
+	breakpoints: {
+		767: {
+			slidesPerView: 1,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 5,
+		},
+		2000: {
+			slidesPerView: 3
+		},
+	}
 });
 
 var reviewsSlider = new Swiper('.reviews__slider', {
@@ -40,4 +66,15 @@ var reviewsSlider = new Swiper('.reviews__slider', {
 	spaceBetween: 15,
 	slidesPerView: 1,
 	loop: true,
+	breakpoints: {
+		767: {
+			slidesPerView: 1,
+		},
+		1024: {
+			slidesPerView: 3,
+		},
+		2000: {
+			slidesPerView: 3
+		},
+	}
 });
