@@ -61,7 +61,8 @@ h1, h2 {
     display: inline-block; }
     .contacts--header .contacts__item {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin-bottom: 4px; }
       .contacts--header .contacts__item--icon1 {
         display: none; }
       .contacts--header .contacts__item--icon2 .contacts__link:before {
@@ -69,8 +70,10 @@ h1, h2 {
         display: inline-block;
         width: 16px;
         height: 16px;
+        vertical-align: baseline;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 4px;
+        margin-top: 4px;
         background-image: url("../img/icons/contacts__item--phone.png");
         background-size: cover; }
       .contacts--header .contacts__item--icon3 {
@@ -91,7 +94,21 @@ h1, h2 {
     display: block;
     width: 25px;
     height: 25px;
-    float: right; }
+    margin-right: 5px;
+    float: right;
+    background-image: url("../img/icons/Burger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: transform .1s; }
+  .fast-contacts__burger--click {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .page-header {
   background-image: url("../img/320/header_bg.png");
@@ -107,13 +124,13 @@ h1, h2 {
   display: none; }
 
 .promo {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 120px;
+  padding-bottom: 260px; }
   .promo__title {
     font-family: 'PrNovaBold';
     font-size: 36px;
     text-align: center;
-    margin-bottom: 82px; }
+    margin-bottom: 100px; }
     .promo__title:after {
       content: '';
       display: block;
@@ -346,6 +363,8 @@ h1, h2 {
       padding-top: 8px;
       margin: 0 auto;
       border-bottom: 2px solid #000; }
+  .prices__table {
+    display: none; }
   .prices__select {
     display: block;
     width: 100%;
@@ -527,9 +546,14 @@ h1, h2 {
       background-image: url("../img/icons/footer__instagram-icon.png"); }
 
 /*768*/
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
   [class*="__inner"] {
-    width: 768px; }
+    width: 768px;
+    margin: 0 auto; }
+  .fast-contacts {
+    text-align: right; }
+    .fast-contacts__burger {
+      display: none; }
   .contacts--header {
     display: inline-block; }
     .contacts--header .contacts__item {
@@ -537,12 +561,126 @@ h1, h2 {
       vertical-align: middle; }
       .contacts--header .contacts__item--icon1 {
         display: inline-block; }
+        .contacts--header .contacts__item--icon1:before {
+          content: '';
+          display: inline-block;
+          width: 19px;
+          height: 19px;
+          vertical-align: baseline;
+          margin-left: 10px;
+          margin-right: 4px;
+          margin-top: 4px;
+          background-image: url("../img/icons/contacts__item--time.png");
+          background-size: cover; }
       .contacts--header .contacts__item--icon3 {
         display: inline-block; }
+        .contacts--header .contacts__item--icon3:before {
+          content: '';
+          display: inline-block;
+          width: 13px;
+          height: 18px;
+          vertical-align: baseline;
+          margin-left: 10px;
+          margin-right: 4px;
+          margin-top: 4px;
+          background-image: url("../img/icons/contacts__item--place.png");
+          background-size: cover; }
   .promo__text {
-    display: block; } }
+    display: block;
+    font-family: 'OpenSansReg';
+    font-size: 16px;
+    line-height: 31px; }
+  .page-header {
+    background-image: url("../img/768/header_bg.png");
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 40px; }
+    .page-header .logo {
+      display: inline-block;
+      vertical-align: middle; }
+    .page-header .main-nav {
+      display: inline-block;
+      margin-left: 100px;
+      vertical-align: middle; }
+      .page-header .main-nav__list {
+        display: inline-block; }
+      .page-header .main-nav__item {
+        display: inline-block;
+        font-family: 'PrNovaReg';
+        font-size: 20px;
+        margin-left: 46px; }
+  .traces {
+    background-image: linear-gradient(to bottom, transparent 85%, #fff), url("../img/320/traces_bg.png"); }
+  .sales__item {
+    width: 100%; }
+    .sales__item--1 {
+      background-image: url("../img/768/sales__item_bg1.png"); }
+    .sales__item--2 {
+      background-image: url("../img/768/sales__item_bg2.png"); }
+    .sales__item--3 {
+      background-image: url("../img/768/sales__item_bg3.png"); }
+  .sales__text {
+    font-size: 30px; }
+  .about__top {
+    width: 100%; }
+  .about__wrap-item {
+    width: 700px;
+    margin: 0 auto; }
+  .about__item {
+    width: 200px; }
+    .about__item:before {
+      display: block;
+      margin: 10px auto; }
+    .about__item--2 {
+      margin-left: 40px; }
+    .about__item--3 {
+      margin-left: 40px; }
+  .about__bottom {
+    width: 100%; }
+  .about__img {
+    width: 245px; }
+  .prices__mobile {
+    display: none; }
+  .prices__table {
+    width: 740px;
+    margin: 0 auto;
+    display: block;
+    border-collapse: collapse;
+    font-family: 'OpenSansReg';
+    font-size: 16px; }
+    .prices__table-head {
+      color: #dadae7;
+      background-color: #22313f; }
+    .prices__table-extra-time {
+      text-align: center;
+      text-transform: uppercase; }
+    .prices__table-operator {
+      background-color: #f0f0f0;
+      opacity: 91%; }
+      .prices__table-operator-price {
+        text-align: right; }
+    .prices__table-th {
+      text-align: center; }
+    .prices__table-time {
+      text-align: right;
+      background-color: #e7e7e7;
+      padding-right: 20px; }
+    .prices__table-col1 {
+      width: 370px;
+      color: #dadae7;
+      background-color: #22313f;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box; }
+    .prices__table-price {
+      width: 185px;
+      text-align: center; }
+    .prices__table td {
+      padding-top: 16px;
+      padding-bottom: 16px; } }
 
 /*1200*/
 @media only screen and (min-width: 1200px) {
   [class*="__inner"] {
-    width: 1200px; } }
+    width: 1200px;
+    margin: 0 auto; } }
