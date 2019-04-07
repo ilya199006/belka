@@ -52,7 +52,8 @@ h1, h2 {
   width: 320px;
   margin: 0 auto;
   padding-left: 14px;
-  padding-right: 14px; }
+  padding-right: 14px;
+  box-sizing: border-box; }
 
 .contacts {
   font-family: 'PrNovaLight';
@@ -188,15 +189,15 @@ h1, h2 {
     opacity: .75;
     z-index: 1; }
   .track--1 {
-    background-image: url("../img/track__img1.png"); }
+    background-image: url("../img/tracks/track__img1.png"); }
   .track--2 {
-    background-image: url("../img/track__img2.png"); }
+    background-image: url("../img/tracks/track__img2.png"); }
   .track--3 {
-    background-image: url("../img/track__img3.png"); }
+    background-image: url("../img/tracks/track__img3.png"); }
   .track--4 {
-    background-image: url("../img/track__img4.png"); }
+    background-image: url("../img/tracks/track__img4.png"); }
   .track--5 {
-    background-image: url("../img/track__img5.png"); }
+    background-image: url("../img/tracks/track__img5.png"); }
   .track__header {
     position: relative;
     z-index: 2;
@@ -287,6 +288,7 @@ h1, h2 {
   padding-right: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 293px;
   margin-bottom: 30px;
   background-image: url("../img/320/about_bg.png");
   background-size: cover;
@@ -306,6 +308,9 @@ h1, h2 {
     padding-top: 8px;
     margin: 0 auto;
     border-bottom: 2px solid #fff; }
+
+.about__wrap-item {
+  width: 100%; }
 
 .about__item {
   display: inline-block;
@@ -404,8 +409,11 @@ h1, h2 {
     .prices__per-hour-number {
       float: right; }
   .prices__form {
-    margin-top: 21px;
-    margin-bottom: 12px; }
+    width: 300px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    overflow: hidden; }
   .prices__btn {
     display: block;
     margin: 0 auto;
@@ -430,30 +438,32 @@ h1, h2 {
     text-align: center; }
 
 .reviews {
-  position: relative;
   margin: 0 auto;
   padding-top: 36px; }
-  .reviews:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    width: 90%;
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 100%;
-    z-index: 1;
-    background-color: #e7e7e7;
-    opacity: .6; }
   .reviews__inner {
     position: relative;
     z-index: 2; }
+    .reviews__inner:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      margin: 0 auto;
+      width: 300px;
+      height: 100%;
+      z-index: 1;
+      background-color: #e7e7e7;
+      opacity: .6; }
+  .reviews__slider {
+    width: 100%; }
   .reviews__title {
     color: #000;
     font-family: 'PrNovaBold';
     font-size: 36px;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    z-index: 2;
+    position: relative; }
     .reviews__title:after {
       content: '';
       display: block;
@@ -549,7 +559,10 @@ h1, h2 {
 @media only screen and (min-width: 768px) {
   [class*="__inner"] {
     width: 768px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box; }
   .fast-contacts {
     text-align: right; }
     .fast-contacts__burger {
@@ -558,7 +571,8 @@ h1, h2 {
     display: inline-block; }
     .contacts--header .contacts__item {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin-left: 55px; }
       .contacts--header .contacts__item--icon1 {
         display: inline-block; }
         .contacts--header .contacts__item--icon1:before {
@@ -573,7 +587,8 @@ h1, h2 {
           background-image: url("../img/icons/contacts__item--time.png");
           background-size: cover; }
       .contacts--header .contacts__item--icon3 {
-        display: inline-block; }
+        display: inline-block;
+        margin-right: 15px; }
         .contacts--header .contacts__item--icon3:before {
           content: '';
           display: inline-block;
@@ -611,8 +626,15 @@ h1, h2 {
         margin-left: 46px; }
   .traces {
     background-image: linear-gradient(to bottom, transparent 85%, #fff), url("../img/320/traces_bg.png"); }
+  .track__img {
+    display: inline; }
+  .track__header {
+    margin-bottom: 0px; }
+  .track--1, .track--2, .track--3, .track--4, .track--5 {
+    background-image: none; }
   .sales__item {
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box; }
     .sales__item--1 {
       background-image: url("../img/768/sales__item_bg1.png"); }
     .sales__item--2 {
@@ -622,7 +644,8 @@ h1, h2 {
   .sales__text {
     font-size: 30px; }
   .about__top {
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box; }
   .about__wrap-item {
     width: 700px;
     margin: 0 auto; }
@@ -677,7 +700,13 @@ h1, h2 {
       text-align: center; }
     .prices__table td {
       padding-top: 16px;
-      padding-bottom: 16px; } }
+      padding-bottom: 16px; }
+  .reviews__inner:before {
+    width: 740px; }
+  .comment {
+    width: 200px;
+    margin: 0 auto;
+    box-sizing: border-box; } }
 
 /*1200*/
 @media only screen and (min-width: 1200px) {
