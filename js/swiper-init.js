@@ -63,7 +63,7 @@ var reviewsSlider = new Swiper('.reviews__slider', {
 	slideClass: 'reviews__slider-item',
 	slideActiveClass: 'reviews__slider-item-active',
 	slideNextClass: 'reviews__slider-item-next',
-	spaceBetween: 15,
+	spaceBetween: 0,
 	slidesPerView: 1,
 	loop: true,
 	breakpoints: {
