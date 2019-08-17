@@ -35,7 +35,7 @@
 				<img src="img/icons/belka-logo.png" alt="logo">
 			</a>
 			<a href="#" class="btn page-header__btn">Купить билет</a>
-			<nav class="main-nav">
+			<nav class="main-nav" id="mainNav">
 				<ul class="main-nav__list">
 					<li class="main-nav__item">
 						<a href="#traces">Трассы</a>
@@ -51,6 +51,19 @@
 					</li>
 					<li class="main-nav__item">
 						<a href="#contacts">Контакты</a>
+					</li>
+					<li class="main-nav__item--320px">
+						<ul class="social-networks">
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link social-networks__link--twitter"></a>
+							</li>
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link social-networks__link--vk"></a>
+							</li>
+							<li class="social-networks__item">
+								<a href="#" class="social-networks__link social-networks__link--instagram"></a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
@@ -303,11 +316,12 @@
 						</tr>
 					</tbody>
 				</table>
-			
-				<form class="prices__form" action="">			
-					<button class="prices__btn">Купить билет</button>
-				</form>
-				<a href="#" class="prices__secure-pdf">Техника безопасности (PDF)</a>
+				<div class="prices__form-wrapper">
+					<form class="prices__form" action="">			
+						<button class="prices__btn">Купить билет</button>
+					</form>
+					<a href="#" class="prices__secure-pdf">Техника безопасности (PDF)</a>
+				</div>
 			</div>
 		</section>
 
@@ -376,9 +390,7 @@
 	</div>
 	
 	<footer class="page-footer">
-		<div class="map" style="border: 1px solid;">
-			<iframe src="" frameborder="0"></iframe>
-		</div>
+		<iframe class="map-mobile" src="" frameborder="0"></iframe>
 		<div class="page-footer__inner">
 			<div class="page-footer__left">
 				<ul class="contacts contacts--footer" id="contacts">
@@ -428,7 +440,7 @@
 			</div>
 
 			<div class="page-footer__right">
-				<iframe>
+				<iframe class="map-desktop" src="" frameborder="0">
 					<!-- map -->
 				</iframe>
 			</div>

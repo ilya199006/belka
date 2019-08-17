@@ -53,17 +53,23 @@
             background-image: url("../img/icons/contacts__item--place.png")
             background-size: cover
   .promo
+    &__teaser
+      display: block
+      text-align: left
+
     &__text
       display: block
       font-family: 'OpenSansReg'
       font-size: 16px
       line-height: 31px
+      text-align: left
 
   .page-header
     background-image: url('../img/768/header_bg.png')
     background-size: cover
     background-position: center bottom
     padding-top: 40px
+    text-align: right
 
     .logo
       display: inline-block
@@ -71,24 +77,37 @@
 
     .main-nav
       display: inline-block
-      margin-left: 100px
       vertical-align: middle
+      margin-left: 100px
 
       &__list
         display: inline-block
 
       &__item
         display: inline-block
+        box-sizing: border-box
         font-family: 'PrNovaReg'
         font-size: 20px
         margin-left: 46px
+        border-bottom: 1px solid transparent
+
+        &:hover
+          border-bottom: 1px solid black
+
+        &--320px
+          display: none
 
   .traces
     //извлечь из макета бэкграунд на 768
     background-image: linear-gradient(to bottom, transparent 85%, #fff), url('../img/320/traces_bg.png')
   .track
+    height: 560px
+
     &__img
       display: inline
+
+    &:after
+      height: 100%
 
     &__header
       margin-bottom: 0px
@@ -107,6 +126,7 @@
         background-image: url('../img/768/sales__item_bg2.png')
       &--3
         background-image: url('../img/768/sales__item_bg3.png')
+
     &__text
       font-size: 30px
 
@@ -162,6 +182,10 @@
         background-color: #f0f0f0
         opacity: 91%
 
+        td
+          padding-left: 20px
+          padding-right: 20px
+
         &-price
           text-align: right
 
@@ -190,6 +214,22 @@
         padding-top: 16px
         padding-bottom: 16px
 
+    &__form
+      display: inline-block
+      margin-top: 83px
+
+      &-wrapper
+        width: 515px
+        margin: 0 auto
+
+    &__secure-pdf
+      display: inline-block
+      vertical-align: top
+      margin-top: 100px
+
+    &__btn
+      margin-left: 0
+
   .reviews
 
     &__inner
@@ -202,7 +242,39 @@
     margin: 0 auto
     box-sizing: border-box
 
+  .page-footer
+    &__inner
+      padding-top: 44px
 
+    &__left
+      display: inline-block
+      width: 300px
+      vertical-align: top
 
+      .contacts
 
+        &__item
+          margin-top: 24px
 
+    &__right
+      display: inline-block
+
+    .up-btn
+      float: none
+      margin-top: 32px
+
+    .map
+      &-mobile
+        display: none
+
+      &-desktop
+        width: 444px
+        height: 400px
+        box-sizing: border-box
+        border: 1px solid white
+
+    &-nav
+      margin-top: 35px
+
+    .social-networks
+      margin-top: 37px
